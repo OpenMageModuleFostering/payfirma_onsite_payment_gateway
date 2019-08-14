@@ -21,7 +21,8 @@ class Collinsharper_Payfirma_Model_Api extends Varien_Object
             'card_number'       => $cardNumber,
             'card_expiry_month' => $expiryMonth,
             'card_expiry_year'  => $expiryYear,
-            'do_not_store'      => 'true'
+            'do_not_store'      => 'true',
+			'send_receipt'		=> 'false'
         );
 
         if ($cvv !== null) {
@@ -53,7 +54,8 @@ class Collinsharper_Payfirma_Model_Api extends Varien_Object
             'card_number'       => $cardNumber,
             'card_expiry_month' => $expiryMonth,
             'card_expiry_year'  => $expiryYear,
-            'do_not_store'      => 'true'
+            'do_not_store'      => 'true',
+			'send_receipt'		=> 'false'
         );
 
         if ($cvv !== null) {
@@ -84,7 +86,8 @@ class Collinsharper_Payfirma_Model_Api extends Varien_Object
         $payload = array(
             'merchant_id' => $this->getMerchantId(),
             'key'         => $this->getApiKey(),
-            'amount'      => $amount
+            'amount'      => $amount,
+			'send_receipt'		=> 'false'
         );
 
         if ($this->getIsTestMode()) {
@@ -102,7 +105,8 @@ class Collinsharper_Payfirma_Model_Api extends Varien_Object
         $payload = array(
             'merchant_id' => $this->getMerchantId(),
             'key'         => $this->getApiKey(),
-            'amount'      => $amount
+            'amount'      => $amount,
+			'send_receipt'		=> 'false'
         );
 
         if ($this->getIsTestMode()) {

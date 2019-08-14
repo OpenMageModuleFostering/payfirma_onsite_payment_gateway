@@ -172,9 +172,9 @@ class Collinsharper_Payfirma_Model_Payment extends Mage_Payment_Model_Method_Cc
 
     protected function _formatMoney($amount, $currencyCode)
     {
-        return Mage::getModel('directory/currency')->load($currencyCode)
-            ->format($amount, array('display' => Zend_Currency::NO_SYMBOL), false);
+        return number_format($amount, 2, '.', '');
     }
+
 
     /**
      * @return Collinsharper_Payfirma_Model_Api
