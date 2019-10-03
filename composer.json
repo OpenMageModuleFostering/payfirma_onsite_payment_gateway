@@ -1,16 +1,19 @@
 {
-    "name": "OpenMageModuleFostering/Payfirma_Onsite_Payment_Gateway",
+    "name": "OpenMageModuleFostering\/Payfirma_Onsite_Payment_Gateway",
     "type": "magento-module",
     "license": "MIT-License",
     "homepage": "",
     "description": "Provides Credit Card processing through the Payfirma Online payment Gateway",
     "authors": [
-    {
-        "name": "Collins Harper",
-        "email": "customersupport@collinsharper.com"
-    }
-],
+        {
+            "name": "Collins Harper",
+            "email": "customersupport@collinsharper.com"
+        }
+    ],
     "suggest": {
-        "magento-hackathon/magento-composer-installer": "*"
-    }
+        "magento-hackathon\/magento-composer-installer": "*"
+    },
+    "keywords": [
+        "openmage-module"
+    ]
 }
