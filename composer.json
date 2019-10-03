@@ -1,5 +1,5 @@
 {
-    "name": "OpenMageModuleFostering\/Payfirma_Onsite_Payment_Gateway",
+    "name": "openmage-module-fostering\/payfirma_onsite_payment_gateway",
     "type": "magento-module",
     "license": "MIT-License",
     "homepage": "",
